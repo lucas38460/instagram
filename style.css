@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0%;
+  padding: 0%;
+}
+
+/* GLOBAL */
+
+header img {
+  border-radius: 50%;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+}
