@@ -12,4 +12,11 @@
 <stop offset="1" stop-color="#FFA800"/>
 </linearGradient>
 </defs>
+<mel>
+    <pet>
+        <odeur></odeur>
+        <intensité></intensité>
+        <bruit></bruit>
+    </pet>
+</mel>
 </svg>
