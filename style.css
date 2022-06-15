@@ -31,15 +31,11 @@ h2 {
   margin-left: 70px;
 }
 
-#clearfix {
-  clear: both;
-}
-
 /* GLOBAL */
 
 .imgCenter {
   display: block;
-  width: 50%;
+  width: 10rem;
 }
 
 .imgCenter img {

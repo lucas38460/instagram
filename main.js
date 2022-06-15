@@ -27,16 +27,21 @@ const postVar = [
     likes: 666,
   },
 ];
+const app = document.getElementById("appMel");
 
 const render = () => {
   postVar.map((data) => {
+    const posteu = document.createElement("div");
+
+    app.appendChild(posteu);
+
     const hautDiv = document.createElement("div");
     hautDiv.classList.add("haut");
-    document.body.appendChild(hautDiv);
+    posteu.appendChild(hautDiv);
     // div en haut
 
-    const imgAvat = document.createElement('img');
-    imgAvat.classList.add('space10');
+    const imgAvat = document.createElement("img");
+    imgAvat.classList.add("space10");
     imgAvat.src = data.avatar;
     hautDiv.appendChild(imgAvat);
     // img Avatar
@@ -64,7 +69,7 @@ const render = () => {
     // img de la publication
 
     const basDiv = document.createElement("div");
-    hautDiv.appendChild(basDiv);
+    posteu.appendChild(basDiv);
     hautDiv.classList.add("bas");
     // div du bas
 
@@ -72,28 +77,27 @@ const render = () => {
     iconSDiv.classList.add("iconS");
     basDiv.appendChild(iconSDiv);
     // papa des icon
-    
+
     const i_Hearth = document.createElement("i");
     i_Hearth.classList.add("fa-heart");
     i_Hearth.classList.add("fa-regular");
     iconSDiv.appendChild(i_Hearth);
-    
+
     const i_comment = document.createElement("i");
     i_comment.classList.add("fa-comment");
     i_comment.classList.add("fa-regular");
     iconSDiv.appendChild(i_comment);
-    
+
     const i_send = document.createElement("i");
     i_send.classList.add("fa-paper-plane");
     i_send.classList.add("fa-regular");
     iconSDiv.appendChild(i_send);
 
-    const i_fav = document.createElement('i');
-    i_fav.classList.add('fa-bookmark');
-    i_fav.classList.add('fa-regular');
+    const i_fav = document.createElement("i");
+    i_fav.classList.add("fa-bookmark");
+    i_fav.classList.add("fa-regular");
     iconSDiv.appendChild(i_fav);
     // les icons
-
   });
 };
 
