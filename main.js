@@ -2,7 +2,7 @@ const postVar = [
   {
     isBooked: false,
     pseudo: "Melanight",
-    isSponsored: true,
+    isSponsored: false,
     avatar: "http://via.placeholder.com/50",
     imgUrl: "./img/Capture d’écran 2022-06-02 140052.png",
     isLiked: false,
@@ -11,7 +11,7 @@ const postVar = [
   {
     isBooked: true,
     pseudo: "LucieLpb",
-    isSponsored: false,
+    isSponsored: true,
     avatar: "http://via.placeholder.com/50",
     imgUrl: "./img/vanessa.jpg",
     isLiked: false,
@@ -26,6 +26,7 @@ const postVar = [
     isLiked: false,
     likes: 666,
   },
+
 ];
 
 const app = document.getElementById("appMel");
