@@ -27,13 +27,14 @@ const postVar = [
     likes: 666,
   },
 ];
+
 const app = document.getElementById("appMel");
 
 const render = () => {
   postVar.map((data) => {
     const posteu = document.createElement("div");
-
     app.appendChild(posteu);
+    // création du grand papa
 
     const hautDiv = document.createElement("div");
     hautDiv.classList.add("haut");
@@ -61,16 +62,17 @@ const render = () => {
 
     const imgDiv = document.createElement("div");
     imgDiv.classList.add("imgCenter");
-    hautDiv.appendChild(imgDiv);
+    posteu.appendChild(imgDiv);
+    // div de la publication
+
     const imgPost = document.createElement("img");
-    imgDiv.appendChild(imgPost);
     imgPost.src = data.imgUrl;
-    // Img de la publication
+    imgDiv.appendChild(imgPost);
     // img de la publication
 
     const basDiv = document.createElement("div");
     posteu.appendChild(basDiv);
-    hautDiv.classList.add("bas");
+    basDiv.classList.add("bas");
     // div du bas
 
     const iconSDiv = document.createElement("div");
@@ -98,6 +100,11 @@ const render = () => {
     i_fav.classList.add("fa-regular");
     iconSDiv.appendChild(i_fav);
     // les icons
+
+    const spacePost = document.createElement('div');
+    spacePost.classList.add('spaceDown');
+    posteu.appendChild(spacePost);
+    // space entre publi
   });
 };
 
