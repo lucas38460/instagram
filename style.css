@@ -18,7 +18,6 @@ h2 {
 
 .haut {
   width: 100%;
-  position: absolute;
   background-color: white;
 }
 
@@ -38,13 +37,24 @@ h2 {
 
 /* GLOBAL */
 
-.publiKtion {
+.imgCenter {
   display: block;
+  width: 50%;
+}
+
+.imgCenter img {
+  width: 100%;
 }
 
 .sizefont {
   font-size: 5rem;
-  position: relative;
-  top: 0;
-  right: 0;
+}
+
+.iconS {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bas {
+  width: 10%;
 }
